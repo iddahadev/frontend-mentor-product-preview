@@ -1,0 +1,152 @@
+@import url("./base.css");
+
+body {
+  --color-bg: var(--color-cream);
+
+  height: 100vh;
+  background-color: var(--color-bg);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-14);
+  font-weight: 500;
+  color: var(--color-aurometal-saurus);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+
+  border-radius: 0.625rem;
+}
+
+.product-card {
+  --color-bg: var(--color-white);
+}
+
+.product-image {
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.product-card-body {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 24px;
+}
+
+.product-category {
+  font-size: var(--font-size-12);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-name {
+  margin-top: 0.75rem;
+  font-size: var(--font-size-32);
+  color: var(--color-gunmetal);
+}
+
+.product-description {
+  margin-top: 1rem;
+  line-height: 164.286%;
+}
+
+.product-price-container {
+  margin-top: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+
+.product-price {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-32);
+  font-weight: bold;
+  color: var(--color-deep-aquamarine);
+}
+
+.product-old-price {
+  font-size: var(--font-size-13);
+  line-height: 176.923%;
+  text-decoration-line: line-through;
+}
+
+.btn {
+  width: 100%;
+  padding: 16px;
+
+  font-size: var(--font-size-14);
+  font-weight: bold;
+
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-deep-aquamarine);
+
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+
+  color: var(--color-white);
+}
+
+.product-btn {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 48rem) {
+  .card {
+    flex-direction: row;
+  }
+
+  .product-card {
+    width: 37.5rem;
+  }
+
+  .product-card picture {
+    width: 50%;
+  }
+
+  .product-card-body {
+    width: 50%;
+  }
+
+  .product-image {
+    border-bottom-left-radius: 0.625rem;
+    border-top-right-radius: 0;
+  }
+
+  .product-card-body {
+    flex: 1;
+    padding: 32px;
+  }
+
+  .product-name {
+    margin-top: 1.25rem;
+  }
+
+  .product-description {
+    margin-top: 1.5rem;
+  }
+
+  .product-price-container {
+    margin-top: 1.125rem;
+  }
+
+  .product-btn {
+    margin-top: 1.5rem;
+  }
+}
