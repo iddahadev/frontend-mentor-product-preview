@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/fraunces/Fraunces-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+:root {
+  /* Primary colors */
+  --color-deep-aquamarine: #3d8168;
+  --color-cream: #f2eae2;
+
+  /* Neutral colors */
+  --color-white: #fff;
+  --color-aurometal-saurus: #6c7289;
+  --color-gunmetal: #1c232b;
+
+  /* Font sizes */
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-20: 1.25rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-36: 2.25rem;
+  --font-size-40: 2.5rem;
+
+  /* Font Families */
+  --font-family-serif: Fraunces, serif;
+  --font-family-sans: Montserrat, sans-serif;
+
+  line-height: 1.5;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-family-serif);
+  font-weight: bold;
+  line-height: 1;
+}
+
+picture,
+picture > img {
+  width: 100%;
+  display: block;
+}
